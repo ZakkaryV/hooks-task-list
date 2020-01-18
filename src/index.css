@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(250, 235, 215);
+}
+
+.App {
+  background-color: #fdf6ee;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0px;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  transition: all 0.1s ease;
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+  min-height: 50px;
+  border: 1px solid transparent;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.todo .details {
+  width: 90%;
+  align-self: stretch;
+  align-items: center;
+  display: flex;
+}
+
+textarea {
+  width: 80%;
+  height: fit-content;
+}
+
+.todo:hover {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #d7e6fa;
+}
+
+.buttons {
+  padding: 20px 10px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.details {
+  display: inline-block;
+}
+
+.done {
+  text-decoration: line-through;
+  color: grey;
+}
